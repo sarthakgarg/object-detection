@@ -1,0 +1,3 @@
+/home/nis/coding/courses/cs771/project/build/CMakeFiles/edit_cache.dir
+/home/nis/coding/courses/cs771/project/build/CMakeFiles/rebuild_cache.dir
+/home/nis/coding/courses/cs771/project/build/CMakeFiles/object_detector.dir

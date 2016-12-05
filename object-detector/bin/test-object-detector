@@ -1,0 +1,26 @@
+#!/usr/bin/python
+import os
+
+
+# testing with different videos.
+# image_path = "../data/fresh-data/"
+# data_path = "../data/fresh-data/features/"
+# test_image_path = "../data/fresh-data/test/"
+# test_data_path = "../data/fresh-data/test/features/"
+
+# cross-validation
+image_path = "../data/dataset/"
+data_path = "../data/dataset/features/"
+
+
+# Extract the features.
+os.system("python ../object-detector/extract-features.py -i {} -d {}".format(image_path, data_path))
+
+
+# Train the Model
+os.system("python ../object-detector/train-classifier.py -d {}".format(data_path))
+
+# # Perform testing
+# test_im_path = "../data/dataset/Autorickshaw/917.png"
+# #test_im_path = "../data/dataset/out017.jpg"
+#os.system("python ../object-detector/test-object.py -d {}".format(test_data_path))
